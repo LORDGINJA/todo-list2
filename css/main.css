@@ -1,3 +1,47 @@
 /*links css files*/
 @import "reset.css";
 @import "normalize.css";
+
+
+body{
+	color: #999;
+	background-image: url(../images/train.jpg);
+  	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+  	background-size: cover;
+  	font-family: 'PT Sans';
+	background-attachment: fixed;
+	min-height: 100%
+	-webkit-text-size-adjust: none;
+  	overflow-x: hidden;
+}
+
+.wrap{}
+
+.task-list{
+	width: 350px;
+	height: 350px;
+	min-height: 300px;
+	background: #fff;
+	opacity: .8;
+/*	box-shadow: 2px 2px 0px #ddd;
+*/	margin-top: 150px;
+	margin-right: 474.5px;
+	margin-left: 474.5px;
+	padding: 25px 6%;
+}
+
+.add-new-task{
+	padding-left: 474.5px;
+
+}
+
+.words{
+	opacity: .9;
+	color: rgb(54, 55, 47);
+}
+
+.delete-button{
+	margin-left: 100%;
+}
