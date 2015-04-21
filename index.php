@@ -1,9 +1,13 @@
 <<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Todo-Lists</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
+<body>	
+	<div class="wrap">
+		
+	</div>
 
 </body>
 </html>
