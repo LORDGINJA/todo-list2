@@ -6,7 +6,7 @@
 	//connecting to database
 	include('connect.php');
 	//says where to save data
-	$mysqli = new mysqli('localhost', 'root', 'root', 'todo');
+	$mysqli = new mysqli('localhost', 'root', 'root', 'todo2');
 	//says what to save
 	$mysqli ->query("INSERT INTO tasks VALUES ('', '$task', '$date', '$time')");
 	//displays the saved data
