@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Todo-List2</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>	
-	<div class="wrap">
-		<div class="task-list">
-			<ul>
-				<?php
+	<head>
+		<title>Todo-List</title>
+		<!-- links main css file -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="task-list">
+				<ul>
+					<?php
 						// inserts connect.php file into this div
 						require("includes/connect.php"); 
 						//creates variables
-						$mysqli = new mysqli('localhost', 'root', 'root', 'todo');
+						$mysqli = new mysqli('localhost', 'root', 'root', 'todo2');
 						//slects information from table and orders it from newest to latest
 						$query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";
 						if ($result = $mysqli->query($query)) {
@@ -31,15 +32,16 @@
 							}
 						}
 					?>
-			</ul>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<!-- inserts a box for inserting text -->
-	<form class="add-new-task words" autocomplete = "off">
-		<input class="words" type="text" name="new-task" placeholder="Add new item..."/> 
-	</form>
-</body>
-<script>
+		<!-- inserts a box for inserting text -->
+		<form class="add-new-task words" autocomplete = "off">
+			<input class="words" type="text" name="new-task" placeholder="Add new item..."/> 
+		</form>
+	</body>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
 		//calls add_task function 
 		add_task();
 		//creates add_task function
