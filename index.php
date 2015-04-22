@@ -8,10 +8,29 @@
 	<div class="wrap">
 		<div class="task-list">
 			<ul>
-				<?php 
-					// inserts connect.php file into this div
-					require("includes/connect.php"); 
-				?>
+				<?php
+						// inserts connect.php file into this div
+						require("includes/connect.php"); 
+						//creates variables
+						$mysqli = new mysqli('localhost', 'root', 'root', 'todo');
+						//slects information from table and orders it from newest to latest
+						$query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";
+						if ($result = $mysqli->query($query)) {
+							$numrows = $result->num_rows;
+							//runs if there is at least one row
+							if ($numrows > 0) {
+								//runs while there is a row
+								while ($row = $result->fetch_assoc()) {
+									//gets the row's name
+									$task_id = $row['id'];
+									//gets the row's data
+									$task_name = $row['task'];
+									//echoes out the name and data
+									echo '<li class="words"><span>'. $task_name . '</span><img id="' . $task_id . '" class="delete-button" width="10px" src="images/close.svg"/></li>';
+								}
+							}
+						}
+					?>
 			</ul>
 		</div>
 	</div>
