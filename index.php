@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Todo-List</title>
+		<title>Todo-List2</title>
 		<!-- links main css file -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css.map">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css.map">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	</head>
+	<header>
+		<button type="button" class="btn btn-default btn-lg link">
+			<a href="<?php echo $path . "register.php"?>"><span class="glyphicon glyphicon-home "></span></p> Register </a>
+		</button>
+		<button type="button" class="btn btn-default btn-lg link">
+			<a href="<?php echo $path . "login.php"?>"><span class="glyphicon glyphicon-home "></span></p> Log-in </a>
+		</button>
+	</header>
 	<body>
 		<div class="wrap">
 			<div class="task-list">
@@ -41,6 +53,8 @@
 		</form>
 	</body>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script>
 		//calls add_task function 
 		add_task();
