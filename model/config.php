@@ -7,15 +7,15 @@
 	session_regenerate_id(true);
 
 	//displays the post page
-	$path = "/blogproject/"; 
+	$path = "/todo-list2/"; 
 	//a variable that stores the string "localhost"
 	$host = "localhost"; 
 	//a variable that stores the string "root" 			//database.php contnents now integrated into config.php file
 	$username = "root"; 
 	//a variable that stores the string "root"
 	$password = "root"; 
-	//a variable that stores the string "blog_db"
-	$database = "blog_db";
+	//a variable that stores the string "todo2"
+	$database = "todo2";
 
 	//checks if the session variable exists.  if it doesn't, the connection gets created
 	if(!isset($_SESSION["connection"])){

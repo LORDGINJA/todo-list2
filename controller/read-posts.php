@@ -1,4 +1,4 @@
-					<!-- ends the divs and paragraph from navagation.php -->
+<!-- 					<!-- ends the divs and paragraph from navagation.php -->
 					</p>
 				</div>
 			</div>
@@ -35,3 +35,4 @@
 	}
 ?>
 
+ -->

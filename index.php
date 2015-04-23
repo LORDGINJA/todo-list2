@@ -1,3 +1,6 @@
+<?php
+	require_once(__DIR__ . "/model/config.php");
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,6 +18,9 @@
 		</button>
 		<button type="button" class="btn btn-default btn-lg link">
 			<a href="<?php echo $path . "login.php"?>"><span class="glyphicon glyphicon-home "></span></p> Log-in </a>
+		</button>
+		<button type="button" class="btn btn-default btn-lg link">
+				<a href="<?php echo $path . "controller/logout-user.php"?>"><span class="glyphicon glyphicon-log-out"></span></p> Logout </a>
 		</button>
 	</header>
 	<body>

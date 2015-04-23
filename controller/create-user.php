@@ -30,7 +30,7 @@
 			//combines the password and the salt to make an encrypted password
 			$hashedPassword = crypt($password, $salt);
 			//a query that inserts into the users' table
-			$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+			$query = $_SESSION["connection"]->query("INSERT INTO listusers SET "
 				//sets email
 				. "email = '$email', "
 				//sets username

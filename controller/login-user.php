@@ -25,7 +25,7 @@
 			//stores username and filters input
 			$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 			//selects proper user from database
-			$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username' ");
+			$query = $_SESSION["connection"]->query("SELECT salt, password FROM listusers WHERE username = '$username' ");
 
 			if ($query->num_rows == 1) {
 				$row = $query->fetch_array();
