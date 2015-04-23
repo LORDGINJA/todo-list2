@@ -25,7 +25,7 @@
 			//stores username and filters input
 			$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 			//selects proper user from database
-			$query = $_SESSION["connection"]->query("SELECT salt, password FROM listusers WHERE username = '$username' ");
+			$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username' ");
 
 			if ($query->num_rows == 1) {
 				$row = $query->fetch_array();
@@ -49,7 +49,7 @@
 		<div class="links">
 			<ul>
 				<button type="button" class="btn btn-default btn-lg link">
-					<a href="<?php echo $path . "index.php"?>"><span class="glyphicon glyphicon-home "></span></p> Home </a>
+					<a href="<?php echo $path . "home.php"?>"><span class="glyphicon glyphicon-home "></span></p> Home </a>
 				</button>
 			</ul>
 		</div>

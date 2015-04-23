@@ -5,4 +5,4 @@
 	//destroys session
 	session_destroy();
 	//redirects user to home.php
-	header("Location: " . $path . "index.php");
+	header("Location: " . $path . "home.php");

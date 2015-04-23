@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/create.css">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css.map">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css.map">
@@ -30,7 +30,7 @@
 			//combines the password and the salt to make an encrypted password
 			$hashedPassword = crypt($password, $salt);
 			//a query that inserts into the users' table
-			$query = $_SESSION["connection"]->query("INSERT INTO listusers SET "
+			$query = $_SESSION["connection"]->query("INSERT INTO users SET "
 				//sets email
 				. "email = '$email', "
 				//sets username
@@ -56,7 +56,7 @@
 		<div class="links">
 			<ul>
 				<button type="button" class="btn btn-default btn-lg link">
-					<a href="<?php echo $path . "index.php"?>"><span class="glyphicon glyphicon-home "></span></p> Home </a>
+					<a href="<?php echo $path . "home.php"?>"><span class="glyphicon glyphicon-home "></span></p> Home </a>
 				</button>
 			</ul>
 		</div>
