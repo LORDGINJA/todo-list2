@@ -43,5 +43,9 @@ body{
 }
 
 .delete-button{
-	margin-left: 100%;
+	margin-left: 80%;
+}
+
+footer{
+	text-align: right;
 }
