@@ -13,16 +13,16 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	</head>
 	<header>
-		<button type="button" class="btn btn-default btn-lg link">
+		<button type="button" class="btn btn-default btn-lg link button">
 			<a href="<?php echo $path . "register.php"?>"><span class="glyphicon glyphicon-home "></span></p> Register </a>
 		</button>
 		<?php if (!authenticateUser()) { ?>
-			<button type="button" class="btn btn-default btn-lg link">
+			<button type="button" class="btn btn-default btn-lg link button">
 				<a href="<?php echo $path . "login.php"?>"><span class="glyphicon glyphicon-home "></span></p> Log-in </a>
 			</button>
 		<?php } ?>
 		<?php if (authenticateUser()) { ?>
-			<button type="button" class="btn btn-default btn-lg link">
+			<button type="button" class="btn btn-default btn-lg link button">
 					<a href="<?php echo $path . "controller/logout-user.php"?>"><span class="glyphicon glyphicon-log-out"></span></p> Logout </a>
 			</button>
 		<?php } ?>
@@ -37,7 +37,7 @@
 						//creates variables
 						$mysqli = new mysqli('localhost', 'root', 'root', 'todo2');
 						//slects information from table and orders it from newest to latest
-						$query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";
+						$query = "SELECT * FROM tasks ORDER BY date DESC, time DESC";
 						if ($result = $mysqli->query($query)) {
 							$numrows = $result->num_rows;
 							//runs if there is at least one row
@@ -49,7 +49,7 @@
 									//gets the row's data
 									$task_name = $row['task'];
 									//echoes out the name and data
-									echo '<li class="words"><span>'. $task_name . '</span><img id="' . $task_id . '" class="delete-button" width="10px" src="images/close.svg"/></li>';
+									echo '<li ><span class="words">'. $task_name . '</span><img id="' . $task_id . '" class="delete-button" width="10px" src="images/close.svg"/></li>';
 								}
 							}
 						}
@@ -59,11 +59,11 @@
 		</div>
 		<?php if (authenticateUser()) { ?>
 			<!-- inserts a box for inserting text -->
-			<form class="add-new-task words" autocomplete = "off">
-				<input class="words" type="text" name="new-task" placeholder="Add new item..."/> 
+			<form class="add-new-task" autocomplete = "off">
+				<input class="add-new-task-words" type="text" name="new-task" placeholder="Add new item..."/> 
 			</form>
 		<?php } ?>
-		<footer>
+		<footer id="footer">
 			Created by Maxwell Karp
 		</footer>
 	</body>

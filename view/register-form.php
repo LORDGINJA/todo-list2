@@ -5,26 +5,29 @@
 <h1>REGISTER</h1>
 <!-- goes to create-user page and displays whatevers there -->   <!-- used to create users -->
 <form class="register" method="post" action="<?php echo $path . "controller/create-user.php";?> ">
-	<div id="email">
+	<div class="fillin">
 		<!-- input box for user's email -->
-		<label for="email">Email: </label>
+		<label class="inputlabel" for="email">Email: </label>
 		<input type="text" name="email"/>
 	</div>
-	<div id="username">
+	<div class="fillin">
 		<!-- input box for user's username  -->
-		<label for="username">Username: </label>
+		<label class="inputlabel" for="username">Username: </label>
 		<input type="text" name="username" />
 	</div>
-	<div id="password">
+	<div class="fillin">
 		<!-- input box for user's password -->
-		<label for="password">Password: </label>
+		<label class="inputlabel" for="password">Password: </label>
 		<input type="password" name="password"/>
 	</div>
 	<div>
 		<!-- button to submit previous three input values -->
-		<button type="submit" class="btn btn-primary btn-lg" class="headingbutton" data-toggle="modal" data-target="#myModal">
+		<button type="submit" class="btn btn-primary btn-lg button" data-toggle="modal" data-target="#myModal">
 			Submit
 		</button>
 	</div>
 </form>
 
+<footer>	
+	Created by Maxwell Karp
+</footer>

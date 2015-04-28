@@ -18,52 +18,81 @@ body{
   	overflow-y: hidden;
 }
 
-.wrap{}
-
-.task-list{
-	width: 350px;
-	height: 350px;
-	min-height: 300px;
-	background: #fff;
-	opacity: .8;
-	margin-top: 150px;
+.wrap{
+	margin-top: 100px;
 	margin-right: auto;
 	margin-left: auto;
+	width: 400px;
+	height: 400px;
+	min-height: 400px;
+	overflow-y: auto;
+}
+
+.task-list{
+	border: 2px grey solid;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	min-height: 400px;
+	background: #fff;
+	opacity: .8;
 	padding: 10px;
 	overflow-y: auto;
 }
 
 ::-webkit-scrollbar{
   width: 5px;  
+
 }
 
 ::-webkit-scrollbar-track{
-  background: #ADACA7;
+  background: rgba(123, 119, 117, .9);
 }
 
 ::-webkit-scrollbar-thumb{
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 1);
   border-radius: 15px;
 }
 
 .add-new-task{
-	margin-left: auto;
-	
 
+	margin-left: auto;
+	margin-right: auto;
+	opacity: .9;
+	color: rgb(123, 119, 117);
+	width: 400px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.add-new-task-words{
+	border: 2px grey solid;
+	padding-left: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: .9;
+	color: rgb(123, 119, 117);
+	width: 400px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 
 .words{
+	text-align: left;
 	opacity: .9;
-	color: rgb(54, 55, 47);
+	color: rgb(94, 94, 88);
 }
 
 .delete-button{
-	margin-left: 85%;
+	text-align: right;
 }
 
 footer{
 	text-align: right;
-	text-align: bottom;
+	vertical-align: baseline;
+	position: absolute;
+    bottom: 0;
+    margin: 0 auto;
 }
 
 
@@ -78,5 +107,15 @@ footer{
 }
 
 header{
-	text-align: center
+	text-align: center;
+	background: #fff;
+	opacity: .8;
+}
+
+.button{
+	width: 80px;
+	background: #fff;
+	opacity: .8;
+	border: none;
+
 }

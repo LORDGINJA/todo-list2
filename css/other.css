@@ -23,3 +23,28 @@ body{
 @media screen and (max-width: 460px) {
 	
 }
+
+.button{
+	width: 80px;
+	background: #fff;
+	opacity: .8;
+}
+
+.inputlabel{
+	text-align: right;
+	width: 73px;
+	height: 20px;
+}
+
+.fillin{
+	margin: 5px;
+}
+
+
+footer{
+	text-align: right;
+	vertical-align: baseline;
+	position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
