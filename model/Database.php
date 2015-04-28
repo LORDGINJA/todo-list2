@@ -38,14 +38,14 @@
 				//checks whether $query was true or not												
 				if($query){ 
 					//echoes that the database was created
-					echo "<p>successfully created database: " . $database . "</p>"; 
+					//echo "<p>successfully created database: " . $database . "</p>"; 
 				}
 
 			}
 			//runs when database has already been created
 			else{
 				//echoes that the database already exists 
-				echo "<p>Database already exists</p>"; 
+				//echo "<p>Database already exists</p>"; 
 			}
 		}
 

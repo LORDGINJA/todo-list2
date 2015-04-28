@@ -15,9 +15,12 @@ body{
 	min-height: 100%
 	-webkit-text-size-adjust: none;
   	overflow-x: hidden;
+  	height: 586px;
 }
 
-.wrap{}
+.wrap{
+	position: center;
+}
 
 .task-list{
 	width: 350px;
@@ -27,13 +30,14 @@ body{
 	opacity: .8;
 /*	box-shadow: 2px 2px 0px #ddd;
 */	margin-top: 150px;
-	margin-right: 474.5px;
-	margin-left: 474.5px;
-	padding: 25px 6%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
 }
 
 .add-new-task{
-	padding-left: 474.5px;
+	margin-left: auto;
+	
 
 }
 
@@ -43,9 +47,25 @@ body{
 }
 
 .delete-button{
-	margin-left: 80%;
+	margin-left: 85%;
 }
 
 footer{
 	text-align: right;
+	margin-top: 8%;
+}
+
+
+
+@media screen and (max-width: 376px) {
+	
+}
+
+
+@media screen and (max-width: 460px) {
+	
+}
+
+header{
+	text-align: center
 }

@@ -16,12 +16,16 @@
 		<button type="button" class="btn btn-default btn-lg link">
 			<a href="<?php echo $path . "register.php"?>"><span class="glyphicon glyphicon-home "></span></p> Register </a>
 		</button>
-		<button type="button" class="btn btn-default btn-lg link">
-			<a href="<?php echo $path . "login.php"?>"><span class="glyphicon glyphicon-home "></span></p> Log-in </a>
-		</button>
-		<button type="button" class="btn btn-default btn-lg link">
-				<a href="<?php echo $path . "controller/logout-user.php"?>"><span class="glyphicon glyphicon-log-out"></span></p> Logout </a>
-		</button>
+		<?php if (!authenticateUser()) { ?>
+			<button type="button" class="btn btn-default btn-lg link">
+				<a href="<?php echo $path . "login.php"?>"><span class="glyphicon glyphicon-home "></span></p> Log-in </a>
+			</button>
+		<?php } ?>
+		<?php if (authenticateUser()) { ?>
+			<button type="button" class="btn btn-default btn-lg link">
+					<a href="<?php echo $path . "controller/logout-user.php"?>"><span class="glyphicon glyphicon-log-out"></span></p> Logout </a>
+			</button>
+		<?php } ?>
 	</header>
 	<body>
 		<div class="wrap">
@@ -53,10 +57,12 @@
 				</ul>
 			</div>
 		</div>
-		<!-- inserts a box for inserting text -->
-		<form class="add-new-task words" autocomplete = "off">
-			<input class="words" type="text" name="new-task" placeholder="Add new item..."/> 
-		</form>
+		<?php if (authenticateUser()) { ?>
+			<!-- inserts a box for inserting text -->
+			<form class="add-new-task words" autocomplete = "off">
+				<input class="words" type="text" name="new-task" placeholder="Add new item..."/> 
+			</form>
+		<?php } ?>
 		<footer>
 			Created by Maxwell Karp
 		</footer>
