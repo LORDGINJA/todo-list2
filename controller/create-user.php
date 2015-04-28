@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../css/create.css">
+		<link rel="stylesheet" type="text/css" href="../css/fin.css">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css.map">
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css.map">
@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width">
 		<meta name="viewport" content="width=320">
 		<meta charset="UTF-8">
-		<title>Blogs</title>
+		<title>Todo-List2</title>
 	</head>
 
 	<header>

@@ -1,0 +1,15 @@
+body{
+	text-align: center;
+	color: #999;
+	background-image: url(../images/fox.jpg);
+  	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+  	background-size: cover;
+  	font-family: 'PT Sans';
+	background-attachment: fixed;
+	min-height: 100%
+	-webkit-text-size-adjust: none;
+  	overflow-x: hidden;
+  	overflow-y: hidden;
+}
