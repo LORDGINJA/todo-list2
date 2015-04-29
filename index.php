@@ -14,11 +14,11 @@
 	</head>
 	<header>
 		<button type="button" class="btn btn-default btn-lg link button">
-			<a href="<?php echo $path . "register.php"?>"><span class="glyphicon glyphicon-home "></span></p> Register </a>
+			<a href="<?php echo $path . "register.php"?>"><span class="glyphicon glyphicon-user "></span></p> Register </a>
 		</button>
 		<?php if (!authenticateUser()) { ?>
 			<button type="button" class="btn btn-default btn-lg link button">
-				<a href="<?php echo $path . "login.php"?>"><span class="glyphicon glyphicon-home "></span></p> Log-in </a>
+				<a href="<?php echo $path . "login.php"?>"><span class="glyphicon glyphicon-log-in "></span></p> Log-in </a>
 			</button>
 		<?php } ?>
 		<?php if (authenticateUser()) { ?>
